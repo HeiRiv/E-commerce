@@ -24,9 +24,4 @@ Tag.init(
   }
 );
 
-Tag.belongsToMany(Product, {
-  through: "product_tag",
-  foreignKey: "tag_id",
-});
-
 module.exports = Tag;
