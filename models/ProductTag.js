@@ -36,14 +36,5 @@ ProductTag.init(
     modelName: "product_tag",
   }
 );
-// Association with Product
-ProductTag.belongsTo(Product, {
-  foreignKey: "product_id",
-});
-
-// Association with Tag
-ProductTag.belongsTo(Tag, {
-  foreignKey: "tag_id",
-});
 
 module.exports = ProductTag;
